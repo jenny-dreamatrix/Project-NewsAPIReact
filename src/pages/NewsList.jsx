@@ -4,7 +4,7 @@ import NewsItem from "../components/NewsItem";
 
 const NewsList = () => {
     const API_KEY = import.meta.env.VITE_API_KEY
-    const [sucheingabe, setSucheingabe] = useState()
+    const [sucheingabe, setSucheingabe] = useState("Bremen")
     const [sprache, setSprache] = useState("de")
     const urlAPI = `https://newsapi.org/v2/everything?q=${sucheingabe}&language=${sprache}&apiKey=${API_KEY}`
     const req = new Request(urlAPI);
